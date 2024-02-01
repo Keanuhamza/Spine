@@ -55,12 +55,17 @@ public class Skeleton: SKNode {
      - parameter folder: name of the folder with image atlases. *optional*
      */
     public convenience init(_ model: SpineModel, atlas folder: String? = nil) {
-
+        print("loading 1.1")
         let skins = Self.createSkins(model, atlas: folder)
+        print("loading 2.2")
         let animations = Self.createAnimations(model)
+        print("loading 3.3")
         self.init(skins: skins, animations: animations)
-        
+
+        print("loading 4.4")
         self.createBones(model)
+
+        print("loading 5.5")
         self.createSlots(model)
     }
     
