@@ -215,7 +215,12 @@ extension Skeleton {
     
     static func createAnimations(_ model: SpineModel) -> [Animation] {
         
-        model.animations.map{ Animation($0, model) }
+        let animations = model.animations.map { animationModel in
+            print(animationModel.name) // Print the name of each animation
+            return Animation(animationModel, model)
+        }
+        
+        return animations
     }
 }
 
