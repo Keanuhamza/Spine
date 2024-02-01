@@ -1,5 +1,6 @@
 ![Tests workflow](https://github.com/maxgribov/Spine/actions/workflows/swift.yml/badge.svg)
 # Spine
+UPDATED WITH PRINT STATEMENTS
 This Swift library allows you to upload characters and their animations from the [Spine (ESS version)](http://esotericsoftware.com) (v4.1+) to `SpriteKit` for platforms::
 
 `iOS` `macOS` `tvOS` `watchOS`
